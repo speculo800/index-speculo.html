@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="img/logo.png">
+  <title>تفاصيل المنتج | سبكولو</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="hamb" id="hamb"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+    <div class="logo"><img src="img/logo.png" alt="شعار سبكولو"></div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="index.html#contact">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="wrap">
+      <section class="gallery">
+        <img id="mainImg" class="main-img" src="" alt="صورة المنتج"/>
+        <div id="thumbs" class="thumbs"></div>
+      </section>
+
+      <section class="info">
+        <h1 id="title">اسم المنتج</h1>
+        <div id="price" class="price"></div>
+        <p id="desc" class="desc"></p>
+        <ul id="features" class="features"></ul>
+
+        <div class="actions">
+          <button id="buyBtn" class="btn">طرق الشراء</button>
+          <a id="backBtn" class="btn secondary" href="products.html">رجوع للمنتجات</a>
+        </div>
+        <div id="sku" class="muted"></div>
+      </section>
+    </div>
+
+    <footer>© 2025 سبكولو للمرايات</footer>
+  </main>
+
+  <!-- Modal طرق الشراء -->
+  <div id="buyModal" class="modal" aria-hidden="true">
+    <div class="box">
+      <button class="close" id="closeModal" aria-label="إغلاق">×</button>
+      <h3>طرق الشراء</h3>
+      <p id="buyText" style="color:#555; margin:6px 0 10px;"></p>
+      <div class="buy-grid">
+        <!-- غيّر رقم الواتساب/الهاتف والإيميل حسب بياناتك -->
+        <a id="whatsBtn" target="_blank" rel="noopener">طلب عبر واتساب</a>
+        <a id="callBtn" class="secondary">اتصال هاتفي</a>
+        <a id="mailBtn">مراسلة عبر الإيميل</a>
+        <button id="copyBtn" type="button">نسخ اسم المنتج</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/product.js"></script>
+</body>
+</html>
